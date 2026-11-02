@@ -1,13 +1,8 @@
-<!-- Logo de la rutina de gym: mancuerna oscura sobre el degradado lima de la tarjeta principal.
+<!-- Logo de la rutina de gym: mancuerna lima de trazo fino sobre fondo plano oscuro (minimalista).
      Fuente de los íconos PNG (python3 marca/iconos.py). -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs>
-    <linearGradient id="lima" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#8DBB14"/><stop offset=".5" stop-color="#C9F23A"/><stop offset="1" stop-color="#EDFBB0"/>
-    </linearGradient>
-  </defs>
-  <rect width="100" height="100" rx="22" fill="url(#lima)"/>
-  <g fill="none" stroke="#141A05" stroke-width="8" stroke-linecap="round">
-    <path d="M34 33v34M66 33v34M23 41v18M77 41v18M34 50h32"/>
+  <rect width="100" height="100" rx="22" fill="#080A06"/>
+  <g fill="none" stroke="#C9F23A" stroke-width="6" stroke-linecap="round">
+    <path d="M36 37v26M64 37v26M36 50h28M27 44v12M73 44v12"/>
   </g>
 </svg>
