@@ -11,4 +11,4 @@ Abrir la app: https://yefersonv5.github.io/rutina-gym/
 
 En iPhone: ábrela en Safari, toca Compartir y luego "Agregar a pantalla de inicio".
 
-Todo está en `index.html` (una sola página, sin dependencias). Lo marcado como hecho se guarda en el navegador de cada dispositivo.
+Todo está en `index.html`; las fuentes van en `fonts/` y `sw.js` guarda la app en el teléfono para que abra sin internet (al cambiar algo, subir el número de `CACHE` en `sw.js`). Lo marcado como hecho se guarda en el navegador de cada dispositivo.

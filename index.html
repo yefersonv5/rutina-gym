@@ -14,10 +14,12 @@
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Rutina de Yeferson</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <style>
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/jakarta-400.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/jakarta-500.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/jakarta-600.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/jakarta-700.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:800;font-display:swap;src:url(fonts/jakarta-800.woff2) format("woff2")}
 /* Layout: app de una columna (máx. 680px) sobre fondo oliva oscuro; tarjetas de vidrio, acento lima, barra inferior flotante y hoja inferior con la animación grande */
 :root{
   --bg:#080A06; --panel:#12160D; --surface:rgba(255,255,255,.045); --surface-2:rgba(255,255,255,.08); --line:rgba(255,255,255,.085);
@@ -683,5 +685,8 @@ syncPlay();selectDay(day);
 if(!paused){last=performance.now();raf=requestAnimationFrame(loop)}
 </script>
 
+<script>
+if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}
+</script>
 </body>
 </html>
