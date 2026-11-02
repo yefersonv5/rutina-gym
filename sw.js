@@ -1,8 +1,8 @@
 // Rutina de gym: guarda la app en el teléfono para que abra sin internet.
-const CACHE = 'rutina-gym-v2';
+const CACHE = 'rutina-gym-v4';
 const FILES = [
   './', './index.html', './manifest.webmanifest',
-  './icon-192.png', './icon-512.png', './apple-touch-icon.png',
+  './icon-192.png', './icon-512.png', './icon-maskable.png', './apple-touch-icon.png',
   './fonts/jakarta-400.woff2', './fonts/jakarta-500.woff2', './fonts/jakarta-600.woff2',
   './fonts/jakarta-700.woff2', './fonts/jakarta-800.woff2'
 ];
