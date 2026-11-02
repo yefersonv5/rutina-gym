@@ -15,5 +15,6 @@
 
 - Cada ejercicio define `A` (posición estirada, inicio de la fuerza) y `B` (posición contraída). `M` es una pose intermedia opcional y `ual` acorta el brazo para simular escorzo.
 - Ángulos en grados (0 = derecha, 90 = arriba); la figura de vista lateral mira a la derecha. Ojo con el sentido del giro: el ángulo se interpola en línea recta, así que para pasar por detrás se usan valores mayores de 180 (por ejemplo 264 en vez de -96).
+- Cuerpo: cada parte (torso, brazos, piernas, cabeza, pantaloneta, tenis) es una curva suave (`smooth`) armada con perfiles de grosor (`UA`, `FA`, `TH`, `SHN` y sus versiones de frente) y se pinta con `part()`: primero un contorno del color del fondo (`--ol`) y encima el relleno, para que se distinga cuando pasa por delante de otra. El lado de atrás va más oscuro. Mantener el estilo minimalista: sin sombreados ni texturas, solo líneas finas de detalle (`dl`) en pecho y hombro.
 - Músculos resaltados (`hl`): `chest`, `back`, `abs`, `quad`, `shin`, `bi`, `tri`, `shoulder`, `thigh` (vista frontal).
 - `cue` son las dos frases grandes (fuerza y regreso), `key` el punto clave, `rest` los segundos de descanso y `track` el punto cuya trayectoria se dibuja (por defecto la mano).
